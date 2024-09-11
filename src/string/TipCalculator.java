@@ -1,6 +1,62 @@
 package string;
 
+import java.util.Locale;
+
 public class TipCalculator {
+
+    public static void main(String[] args) {
+
+        String split="Yes";
+        int numberOfPeople=4;
+        double checkAmount = 476;
+        String serviceQuality="Excellent";
+
+
+
+        calculateTip(split, numberOfPeople,  checkAmount, serviceQuality);
+
+    }
+
+    public static void calculateTip(String split, int numberOfPeople, double checkAmount, String serviceQuality){
+
+        double tipPercentage;
+
+        switch(serviceQuality.toLowerCase()){
+            case "poor":
+                tipPercentage=0.05;
+                break;
+            case "fair":
+                tipPercentage=0.10;
+                break;
+            case "good":
+                tipPercentage=0.15;
+                break;
+            case "great":
+                tipPercentage=0.20;
+                break;
+            case "excellent":
+                tipPercentage=0.25;
+                break;
+            default:
+                tipPercentage=0;
+                break;
+        }
+        double totalTip=checkAmount * tipPercentage;
+        double totalToPay=checkAmount + totalTip;
+
+        System.out.println("Number of people entered:"+ numberOfPeople );
+        System.out.println("Total amount:$" + totalToPay);
+        System.out.println("Tip total:$"+totalTip);
+
+        if(split.equalsIgnoreCase("Yes")){
+            double totalPerPerson=totalToPay / numberOfPeople;
+            double tipPerPerson = totalTip / numberOfPeople;
+            System.out.println("Total per person:$"+totalPerPerson);
+            System.out.println("Total tip:$"+ tipPerPerson);
+        }
+
+
+    }
 }
 /*
 Create a class called TipCalculator, and write a program for a tip calculator.
