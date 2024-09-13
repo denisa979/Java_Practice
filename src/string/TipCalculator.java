@@ -49,10 +49,10 @@ public class TipCalculator {
         System.out.println("Tip total:$"+totalTip);
 
         if(split.equalsIgnoreCase("Yes")){
-            double totalPerPerson=totalToPay / numberOfPeople;
+            double totalPerPerson=totalToPay/ numberOfPeople;
             double tipPerPerson = totalTip / numberOfPeople;
-            System.out.println("Total per person:$"+totalPerPerson);
-            System.out.println("Total tip:$"+ tipPerPerson);
+            System.out.println("Total tip per person:$"+tipPerPerson);
+            System.out.println("Total to pay per person: "+totalPerPerson);
         }
 
 
