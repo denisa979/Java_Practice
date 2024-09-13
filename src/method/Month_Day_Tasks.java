@@ -5,6 +5,9 @@ public class Month_Day_Tasks {
         day(4);
         day(3);
         day(10);
+
+        System.out.println(month(2));
+
     }
     public static void day(int n){
         switch (n){
@@ -35,6 +38,37 @@ public class Month_Day_Tasks {
     }
 
 
+    public static String month( int monthName) {
+        switch (monthName) {
+            case 1:
+                return "January";
+            case 2:
+                return "February";
+            case 3:
+                return "March";
+            case 4:
+               return  "April";
+            case 5:
+                return "May";
+            case 6:
+                return "June";
+            case 7:
+                return "July";
+            case 8:
+                return "August";
+            case 9:
+                return "September";
+            case 10:
+                return "October";
+            case 11:
+                return "November";
+            case 12:
+                return "December";
+            default:
+                return "Invalid month";
+
+        }
+    }
 
 }
 
