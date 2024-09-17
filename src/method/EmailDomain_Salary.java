@@ -4,6 +4,13 @@ public class EmailDomain_Salary {
     public static void main(String[] args) {
         emailDomain("email");
         System.out.println(emailDomain("email"));
+
+        System.out.println("--------------------------------------------------------");
+
+        System.out.println("You make $45 per hour.");
+        System.out.println("You work 40 hours per week.");
+        System.out.println("Your gross income is: $" + salary(45,40));
+
     }
 
     public static String emailDomain(String email) {
@@ -18,6 +25,13 @@ public class EmailDomain_Salary {
         }
         return "gmail";
     }
+
+    public static double salary(double hourlyRate, int weeklyHours){
+
+       double grossIncome = hourlyRate*weeklyHours*52;
+       return grossIncome;
+    }
+
 }
 /*
     public static void emailDomain(String email) {
