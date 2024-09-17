@@ -9,7 +9,7 @@ public class Min_And_MaxNum {
 
     public static int minNumber(int num1, int num2){
 
-        if(num1 < num2) {
+        if(num1 <= num2) {
             return num1;
         }else {
             return num2;
@@ -17,7 +17,7 @@ public class Min_And_MaxNum {
 
         }
         public static int maxNum(int n1, int n2){
-        if(n1 > n2){
+        if(n1 >= n2){
             return n1;
         }else {
             return n2;
