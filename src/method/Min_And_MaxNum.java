@@ -2,6 +2,8 @@ package method;
 
 public class Min_And_MaxNum {
 
+    
+
     /*
     Create a method named min, that can return the minimum number between two numbers
      */
