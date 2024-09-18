@@ -42,7 +42,7 @@ public class RoomReservation {
                 double priceBeforeTax= price * daysOfStay;
                 double totalTax = priceBeforeTax * (percentageRate / 100);
                 double totalAmount = totalTax + priceBeforeTax;
-                System.out.println("You have reserved a "+roomType+" room for "+daysOfStay+ " days. Total price before taxes is $" + priceBeforeTax+ "." + " Total amount will be $"+totalAmount+"."); //we wish
+                System.out.println("You have reserved a "+roomType+" room for "+daysOfStay+ " days. Total price before taxes is $" + priceBeforeTax+ "." + " Total amount will be $"+totalAmount+"."); //we wish### IntelliJ
                 break;
             }else if(response.equals("no")){
                 System.out.println("Have a nice day!");
