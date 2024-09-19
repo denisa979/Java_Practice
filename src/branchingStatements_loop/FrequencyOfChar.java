@@ -5,8 +5,6 @@ public class FrequencyOfChar {
 
 
         System.out.println(frequencyOfCharacter("Java Programming Language ", 'g'));
-
-
     }
 
     public static int frequencyOfCharacter(String str, char ch){
