@@ -1,29 +1,24 @@
 package branchingStatements_loop;
 
-public class FrequencyOfChar {
+public class Frequency {
     public static void main(String[] args) {
 
-
-        System.out.println(frequencyOfCharacter("Java Programming Language ", 'g'));
-
+        System.out.println(frequency("aabcccd",'d'));
 
     }
 
-    public static int frequencyOfCharacter(String str, char ch){
+    public static int frequency(String str, char ch){
 
-            int count = 0;
-
-            for (int i = 0; i < str.length(); i++) {
-                if (str.charAt(i) == ch) {
-                    count++;
-                }
+        int count=0;
+        for (int i = 0; i < str.length() ; i++) {
+            if(str.charAt(i) ==ch ){
+                count++;
             }
+        }
         return count;
     }
 }
-
-
-  /*
+ /*
     Create a class named FrequencyOfChar and Write a program that asks user to enter a string and a char, the returns the frequency of the char from the given string
     Ex:
     inputs:
@@ -38,4 +33,3 @@ public class FrequencyOfChar {
 
     output: 4
             */
-

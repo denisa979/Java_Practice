@@ -5,7 +5,7 @@ public class RoomReservation {
         int kingBed = 120;
         int queenBed = 100;
         int singleBed = 80;
-        String [] responses = {"yes", "single"};
+        String [] responses = {"yes", "king"};
         int responseIndex=0;
         String roomType ="";
         int price=0;
