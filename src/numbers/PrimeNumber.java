@@ -18,6 +18,7 @@ public class PrimeNumber {
         int[]test={2,3,4,5,6,15,16,17,18};
         for (int num : test){
             System.out.println(num+ " is prime: "+prime(num));
+
         }
     }
 }

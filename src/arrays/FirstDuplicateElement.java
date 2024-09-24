@@ -1,6 +1,8 @@
 package arrays;
 
 public class FirstDuplicateElement {
+
+
 }
 /*
         First Duplicate Element
