@@ -1,6 +1,7 @@
 package collections;
 
 public class MoveAllZerosToEnd {
+
 }
 /*
         Move All Zeros To The End
