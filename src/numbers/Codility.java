@@ -8,6 +8,29 @@ public class Codility {
 
     public static void solution(int N) {
 
+
+        for (int i = 1; i <= N; i++) {
+            String result = "";
+
+            if (i % 2 == 0) {
+                result += "Codility";
+            }
+            if (i % 3 == 0) {
+                result += "Test";
+            }
+            if (i % 5 == 0) {
+                result += "Coders";
+            }
+
+            if (result.isEmpty()) {
+                System.out.println(i);
+            } else {
+                System.out.println(result);
+            }
+        }
+
+
+/*
         String result = "";
         for (int i = 1; i <= N; i++) {
             if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0)
@@ -29,6 +52,8 @@ public class Codility {
             }
             System.out.println(result);
         }
+        */
+    }
 }
 
 /*  Write a function: that, given a positive integer N, prints the consecutive numbers from 1 to N,
