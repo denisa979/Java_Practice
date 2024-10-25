@@ -24,6 +24,8 @@ public class Grade {
             }
 
             System.out.println(message);
+
+
         }
     }
 

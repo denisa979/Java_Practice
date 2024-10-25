@@ -1,6 +1,8 @@
 package branchingStatements_loop;
 
+
 public class FrequencyOfChar {
+
     public static void main(String[] args) {
 
 
@@ -18,6 +20,8 @@ public class FrequencyOfChar {
             }
         return count;
     }
+
+
 }
 
 
