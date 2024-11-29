@@ -3,7 +3,7 @@ package numbers;
 public class Codility {
 
     public static void main(String[] args) {
-        solution(24);
+        solution(20);
     }
 
     public static void solution(int N) {

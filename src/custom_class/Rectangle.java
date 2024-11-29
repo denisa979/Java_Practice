@@ -31,6 +31,7 @@ public class Rectangle {
                 ", perimeter=" + perimeter() +
                 '}';
     }
+
 }
 /*
 create a custom class named Rectangle

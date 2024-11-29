@@ -22,6 +22,24 @@ public class DivideWithOutDividingOperator {
         divide(2,3);
         divide(7,5);
         divide(5,0);
+
+        System.out.println("-----------------------------------------");
+
+        int i = 0;
+        i = i++ - --i + ++ i -i --;
+        System.out.println(i);
+
+        System.out.println("--------------------------------");
+
+        int a = 11, b =22, c;
+        c= a+b+a++ + b++ + ++a + ++b;
+        System.out.println(c);
+
+        System.out.println("----------------------------------");
+
+        int j = 11;
+        j = j++ +  ++j;
+        System.out.println(j);
     }
 }
 //Write a method that can divide two numbers without using division operator.

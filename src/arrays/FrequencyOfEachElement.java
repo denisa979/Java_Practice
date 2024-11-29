@@ -1,7 +1,14 @@
 package arrays;
 
 public class FrequencyOfEachElement {
+
+    public static void main(String[] args) {
+        for (int dt = 97; dt <= 122; dt++) {
+            System.out.println((char) dt);
+        }
+    }
 }
+
 /*
         Frequency Of Each Element
 

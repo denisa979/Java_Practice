@@ -1,6 +1,10 @@
 package arrays;
 
 public class MaxProfit {
+
+
+
+
 }
 /*
         Max Profit

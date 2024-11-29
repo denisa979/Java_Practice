@@ -2,6 +2,23 @@ package arrays;
 
 public class FirstDuplicateElement {
 
+    public static void main(String[] args) {
+        int [] arr2= { 5, 1, 5, -1, 5,};
+        System.out.println("firstDuplicate(arr2) = " + firstDuplicate(arr2));
+    }
+
+    public static int firstDuplicate(int [] arr){
+
+        for (int i = 0; i <= arr.length; i++) {
+            for (int j = 0; j <= arr.length; j++) {
+                if(arr[i] == arr[j]){
+                    return arr [i];
+                }
+            }
+        }
+        return 0;
+    }
+
 
 }
 /*

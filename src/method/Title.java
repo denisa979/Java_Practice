@@ -2,23 +2,25 @@ package method;
 
 public class Title {
 
-    public static void main(String[] args) {
-        System.out.println("title(\"jAvA\") = " + title("jAvA"));
 
+    public class FizzBuzz {
+
+        public static void fizzBuzz(int n) {
+            for (int i = 1; i <= n; i++) {
+                if (i % 3 == 0 && i % 5 == 0) {
+                    System.out.print("fizzbuzz ");
+                } else if (i % 3 == 0) {
+                    System.out.print("fizz ");
+                } else if (i % 5 == 0) {
+                    System.out.print("buzz ");
+                } else {
+                    System.out.print(i + " ");
+                }
+            }
+        }
+
+        public static void main(String[] args) {
+            fizzBuzz(12); // Example usage
+        }
     }
-
-    public static String title (String title){
-      title=title.substring(0,1).toUpperCase()+ title.substring(1).toLowerCase();
-
-      return title;
-    }
-    /*
-    Create a method named title that takes a string arguments
-
-    The method returns the proper capitalized version of the given argument
-
-    Ex:
-        title("jAvA") ===> Java
-
-     */
 }
