@@ -3,7 +3,13 @@ package arrays;
 public class FrequencyOfElementInWords {
 
 
-}
+    public static void frequencyOfElement(int [] element){
+
+
+    }
+    }
+
+
 /*
         Frequency of Each Element in Words
 

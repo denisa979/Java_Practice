@@ -1,11 +1,25 @@
 package arrays;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class FrequencyOfEachElement {
 
     public static void main(String[] args) {
         for (int dt = 97; dt <= 122; dt++) {
             System.out.println((char) dt);
         }
+    }
+
+    public static void frequencyOfWord(String [] element){
+
+        Map<String, Integer> frequencyMap=new HashMap<>();
+
+        for (String elements:element){
+            frequencyMap.put(elements, frequencyMap.getOrDefault(elements,0)+1);
+
+        }
+
     }
 }
 
