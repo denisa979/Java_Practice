@@ -1,13 +1,35 @@
 package arrays;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class FrequencyOfElementInWords {
 
 
-    public static void frequencyOfElement(int [] element){
+    private static final String[] numberWords = {
+        "", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
 
+     public static void frequencyOfElement(int[] element) {
+        Map<Integer, Integer> freqMap = new LinkedHashMap<>();
+        for (int num : element) {
+            freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
+        }
 
+        for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
+            int freq = entry.getValue();
+            if (freq == 1) continue;
+            String freqWord = freq > 10 ? "more than 10" : numberWords[freq];
+            System.out.println(entry.getKey() + " is " + freqWord);
+        }
+    
     }
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,3,2,1,3,2,2,2,4,10,11};
+        frequencyOfElement(arr);
     }
+}
+
 
 
 /*
